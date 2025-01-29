@@ -44,6 +44,8 @@ export default tseslint.config(
             { path: '@emotion' },
             { path: 'path' },
             { path: 'class-variance-authority' },
+            { path: 'sonner' },
+            { path: 'recharts' },
           ],
           Libs: [{ path: 'libs/axios' }],
           Utils: [{ path: 'utils' }],
@@ -55,7 +57,12 @@ export default tseslint.config(
           Hooks: [{ path: 'hooks' }],
           Models: [{ path: 'models' }],
           Services: [{ path: 'services' }],
-          Styles: [{ path: 'styles' }, { path: '.css' }, { path: '.styles' }],
+          Styles: [
+            { path: 'styles' },
+            { path: '.css' },
+            { path: '.styles' },
+            { path: 'tailwindcss/colors' },
+          ],
           Assets: [
             { path: 'assets' },
             { path: '.png' },
@@ -66,5 +73,5 @@ export default tseslint.config(
         },
       ],
     },
-  }
+  },
 );

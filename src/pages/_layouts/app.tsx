@@ -2,12 +2,15 @@
 import { ReactElement } from 'react';
 import { Outlet } from 'react-router-dom';
 
+// Components
+import { Header } from '@/components/header';
+
 export const AppLayout = (): ReactElement => {
   return (
-    <div>
-      <h1>Cabeçalho</h1>
+    <div className="flex min-h-screen flex-col antialiased">
+      <Header />
 
-      <div className="content">
+      <div className="flex flex-1 flex-col gap-4 p-8 pt-6">
         <Outlet />
       </div>
     </div>
