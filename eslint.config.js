@@ -47,7 +47,7 @@ export default tseslint.config(
             { path: 'sonner' },
             { path: 'recharts' },
           ],
-          Libs: [{ path: 'libs/axios' }],
+          Libs: [{ path: 'lib/axios' }, { path: '@/lib/react-query' }],
           Utils: [{ path: 'utils' }],
           Routes: [{ path: 'router' }, { path: '@/routes' }],
           Pages: [{ path: 'pages/' }],
@@ -56,7 +56,9 @@ export default tseslint.config(
           Contexts: [{ path: 'contexts' }],
           Hooks: [{ path: 'hooks' }],
           Models: [{ path: 'models' }],
+          Apis: [{ path: '@/api/' }],
           Services: [{ path: 'services' }],
+          Envs: [{ path: '@/env' }],
           Styles: [
             { path: 'styles' },
             { path: '.css' },
